@@ -29,6 +29,10 @@ export class AppComponent implements OnInit {
   }
 
   public onSubmit(): void {
-
+    if (this.form.valid) {
+      console.log('Form is valid!');
+    } else {
+      console.log('Form is not valid.');
+    }
   }
 }
