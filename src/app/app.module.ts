@@ -1,10 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
-
 
 import { AppComponent } from './app.component';
-
+import { DemoFormModule } from './demo-form/demo-form.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    DemoFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]
